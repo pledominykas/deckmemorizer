@@ -18,9 +18,6 @@
 
 <div class="flex justify-between items-center">
   <span class="text-xl font-medium">Select a Deck</span>
-  <Button>
-    <Plus /> Add Custom Stack
-  </Button>
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
