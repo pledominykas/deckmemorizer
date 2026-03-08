@@ -20,7 +20,7 @@
 
 <ModeWatcher />
 <div class="h-screen">
-  <div class="container mx-auto px-4 py-8 h-full flex flex-col">
+  <div class="container mx-auto px-4 py-8 h-full flex flex-col overflow-y-auto">
     <div class="flex justify-between py-4 mb-8">
       <div>
         {#if page.route.id !== "/"}

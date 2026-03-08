@@ -79,8 +79,8 @@
   };
 </script>
 
-<div class="flex flex-col flex-1 min-h-0 gap-6">
-  <div class="flex justify-between items-center gap-6">
+<div class="flex flex-col flex-1 min-h-0 gap-4 md:gap-6">
+  <div class="flex justify-between items-stretch gap-2 md:gap-6">
     <PracticeProgressCard
       title="Progress"
       content={`${practiceState.answeredQuestionCount} / ${data.practiceSettings.numberOfQuestions}`}
@@ -93,11 +93,7 @@
     />
     <PracticeProgressCard
       title="Correct"
-      content={`${practiceState.correctAnswerCount} / ${practiceState.answeredQuestionCount} (${Math.round(
-        (practiceState.correctAnswerCount /
-          practiceState.answeredQuestionCount) *
-          100 || 0,
-      )}%)`}
+      content={`${Math.round((practiceState.correctAnswerCount / practiceState.answeredQuestionCount) * 100 || 0)}%`}
       footer="answered correctly"
     />
   </div>
@@ -131,11 +127,12 @@
             value={userSelection.value?.toString()}
             onValueChange={(value) =>
               (userSelection.value = value as CardValue)}
+            class="flex flex-wrap justify-center gap-y-1"
           >
             {#each Object.values(CardValue) as value}
               <ToggleGroup.Item
                 {value}
-                class={clsx("border", {
+                class={clsx("border basis-1/10 md:basis-1/13", {
                   "bg-(--correct-answer)/50 border-(--correct-answer) data-[state=on]:bg-(--correct-answer)/50 data-[state=on]:border-(--correct-answer)":
                     isAnswerSubmitted &&
                     correctAnswer.kind === AnswerType.Card &&
