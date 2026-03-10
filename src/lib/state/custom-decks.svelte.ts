@@ -21,3 +21,9 @@ export function addCustomDeck(deck: Deck) {
   customDecks = { ...customDecks, [deck.id]: deck };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(customDecks));
 }
+
+export function removeCustomDeck(id: string) {
+  const { [id]: _, ...rest } = customDecks;
+  customDecks = rest;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(customDecks));
+}

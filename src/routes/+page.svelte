@@ -5,7 +5,7 @@
   import { WandSparkles, Plus } from "@lucide/svelte/icons";
   import * as Dialog from "$lib/components/ui/dialog";
   import Label from "$lib/components/ui/label/label.svelte";
-  import { getCustomDecks, addCustomDeck } from "$lib/state/custom-decks.svelte";
+  import { getCustomDecks, addCustomDeck, removeCustomDeck } from "$lib/state/custom-decks.svelte";
   import { parseCardNotation } from "$lib/utils/parse-deck";
 
   let open = $state(false);
@@ -131,6 +131,7 @@
       title={deck.title}
       author={deck.author}
       description={deck.shortDescription}
+      ondelete={() => removeCustomDeck(deck.id)}
     />
   {/each}
 </div>
