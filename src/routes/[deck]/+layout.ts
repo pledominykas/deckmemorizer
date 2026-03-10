@@ -6,7 +6,7 @@ export const load: LayoutLoad = ({ params }) => {
   const deck = getDeck(params.deck);
 
   if (!deck) {
-    throw redirect(302, "/");
+    return redirect(302, "/");
   }
 
   return { deck };
