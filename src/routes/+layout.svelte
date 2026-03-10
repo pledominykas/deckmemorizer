@@ -16,11 +16,12 @@
     name="description"
     content="A trainer for memdeck memorization to help magicians learn and recall card stacks."
   />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </svelte:head>
 
 <ModeWatcher />
 <div class="h-screen">
-  <div class="container mx-auto px-4 py-8 h-full flex flex-col overflow-y-auto">
+  <div class="container mx-auto px-4 py-8 h-full flex flex-col">
     <div class="flex justify-between py-4 mb-8">
       <div>
         {#if page.data.showBackButton !== false}
