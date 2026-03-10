@@ -14,5 +14,6 @@ export const load: PageLoad = async ({ url, params, parent }) => {
 
   return {
     practiceSettings,
+    boundedLayout: true,
   };
 };

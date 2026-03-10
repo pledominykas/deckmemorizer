@@ -20,8 +20,8 @@
 </svelte:head>
 
 <ModeWatcher />
-<div class="h-screen">
-  <div class="container mx-auto px-4 py-8 h-full flex flex-col">
+<div class={["flex flex-col", page.data.boundedLayout ? "h-dvh" : "min-h-dvh"]}>
+  <div class={["container mx-auto px-4 py-8 flex-1 flex flex-col", page.data.boundedLayout && "h-full"]}>
     <div class="flex justify-between py-4 mb-8">
       <div>
         {#if page.data.showBackButton !== false}
