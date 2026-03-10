@@ -7,6 +7,8 @@
     "npm:@sveltejs/kit@^2.50.2": "2.50.2_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_svelte@5.50.0__acorn@8.15.0_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3_acorn@8.15.0",
     "npm:@sveltejs/vite-plugin-svelte@^6.2.4": "6.2.4_svelte@5.50.0__acorn@8.15.0_vite@7.3.1__picomatch@4.0.3",
     "npm:@tailwindcss/vite@^4.1.18": "4.1.18_vite@7.3.1__picomatch@4.0.3",
+    "npm:@vercel/analytics@^1.5.0": "1.6.1_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@6.2.4___svelte@5.50.0____acorn@8.15.0___vite@7.3.1____picomatch@4.0.3__svelte@5.50.0___acorn@8.15.0__typescript@5.9.3__vite@7.3.1___picomatch@4.0.3__acorn@8.15.0_svelte@5.50.0__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3",
+    "npm:@vercel/speed-insights@^1.2.0": "1.3.1_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@6.2.4___svelte@5.50.0____acorn@8.15.0___vite@7.3.1____picomatch@4.0.3__svelte@5.50.0___acorn@8.15.0__typescript@5.9.3__vite@7.3.1___picomatch@4.0.3__acorn@8.15.0_svelte@5.50.0__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3",
     "npm:bits-ui@^2.15.5": "2.15.5_@internationalized+date@3.11.0_svelte@5.50.0__acorn@8.15.0_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@6.2.4___svelte@5.50.0____acorn@8.15.0___vite@7.3.1____picomatch@4.0.3__svelte@5.50.0___acorn@8.15.0__typescript@5.9.3__vite@7.3.1___picomatch@4.0.3__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3",
     "npm:clsx@^2.1.1": "2.1.1",
     "npm:mode-watcher@^1.1.0": "1.1.0_svelte@5.50.0__acorn@8.15.0",
@@ -515,6 +517,28 @@
     },
     "@types/estree@1.0.8": {
       "integrity": "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w=="
+    },
+    "@vercel/analytics@1.6.1_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@6.2.4___svelte@5.50.0____acorn@8.15.0___vite@7.3.1____picomatch@4.0.3__svelte@5.50.0___acorn@8.15.0__typescript@5.9.3__vite@7.3.1___picomatch@4.0.3__acorn@8.15.0_svelte@5.50.0__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3": {
+      "integrity": "sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==",
+      "dependencies": [
+        "@sveltejs/kit",
+        "svelte"
+      ],
+      "optionalPeers": [
+        "@sveltejs/kit",
+        "svelte"
+      ]
+    },
+    "@vercel/speed-insights@1.3.1_@sveltejs+kit@2.50.2__@sveltejs+vite-plugin-svelte@6.2.4___svelte@5.50.0____acorn@8.15.0___vite@7.3.1____picomatch@4.0.3__svelte@5.50.0___acorn@8.15.0__typescript@5.9.3__vite@7.3.1___picomatch@4.0.3__acorn@8.15.0_svelte@5.50.0__acorn@8.15.0_@sveltejs+vite-plugin-svelte@6.2.4__svelte@5.50.0___acorn@8.15.0__vite@7.3.1___picomatch@4.0.3_typescript@5.9.3_vite@7.3.1__picomatch@4.0.3": {
+      "integrity": "sha512-PbEr7FrMkUrGYvlcLHGkXdCkxnylCWePx7lPxxq36DNdfo9mcUjLOmqOyPDHAOgnfqgGGdmE3XI9L/4+5fr+vQ==",
+      "dependencies": [
+        "@sveltejs/kit",
+        "svelte"
+      ],
+      "optionalPeers": [
+        "@sveltejs/kit",
+        "svelte"
+      ]
     },
     "@vitest/expect@4.0.18": {
       "integrity": "sha512-8sCWUyckXXYvx4opfzVY03EOiYVxyNrHS5QxX3DAIi5dpJAAkyJezHCP77VMX4HKA2LDT/Jpfo8i2r5BE3GnQQ==",
@@ -1130,6 +1154,8 @@
         "npm:@sveltejs/kit@^2.50.2",
         "npm:@sveltejs/vite-plugin-svelte@^6.2.4",
         "npm:@tailwindcss/vite@^4.1.18",
+        "npm:@vercel/analytics@^1.5.0",
+        "npm:@vercel/speed-insights@^1.2.0",
         "npm:bits-ui@^2.15.5",
         "npm:clsx@^2.1.1",
         "npm:mode-watcher@^1.1.0",
