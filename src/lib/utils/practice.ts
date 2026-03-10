@@ -2,6 +2,7 @@ import type { Deck } from "$lib/types/cards";
 import type { PracticeSettings, PracticeState } from "$lib/types/practice";
 import { AnswerType, QuestionType, type Answer } from "$lib/types/questions";
 import { generateRandomQuestion } from "./questions";
+import { PRACTICE_STATE_STORAGE_KEY } from "$lib/constants/storage-keys";
 
 export const parsePracticeSettings = (url: URL): PracticeSettings | null => {
   const typesParam = url.searchParams.get("types");
@@ -12,12 +13,10 @@ export const parsePracticeSettings = (url: URL): PracticeSettings | null => {
   }
 
   const selectedQuestionTypes: QuestionType[] = typesParam
-    ? typesParam
-        .split(",")
-        .filter((type): type is QuestionType =>
-          Object.values(QuestionType).includes(type as QuestionType),
-        )
-    : [];
+    .split(",")
+    .filter((type): type is QuestionType =>
+      Object.values(QuestionType).includes(type as QuestionType),
+    );
 
   const numberOfQuestions = parseInt(countParam);
 
@@ -28,16 +27,16 @@ export const parsePracticeSettings = (url: URL): PracticeSettings | null => {
 };
 
 export const savePracticeState = (state: PracticeState) => {
-  localStorage.setItem("practiceState", JSON.stringify(state));
+  localStorage.setItem(PRACTICE_STATE_STORAGE_KEY, JSON.stringify(state));
 };
 
 export const clearPracticeSession = () => {
-  localStorage.removeItem("practiceState");
+  localStorage.removeItem(PRACTICE_STATE_STORAGE_KEY);
 };
 
 export const loadPracticeState = (): PracticeState | null => {
   try {
-    const stored = localStorage.getItem("practiceState");
+    const stored = localStorage.getItem(PRACTICE_STATE_STORAGE_KEY);
 
     if (stored) {
       return JSON.parse(stored) as PracticeState;
@@ -81,8 +80,6 @@ export const updatePracticeProgress = (
   practiceState.answeredQuestionCount += 1;
   practiceState.correctAnswerCount += isCorrect ? 1 : 0;
   practiceState.currentStreak = isCorrect ? practiceState.currentStreak + 1 : 0;
-
-  savePracticeState(practiceState);
 };
 
 export const generateNextQuestion = (
@@ -94,19 +91,17 @@ export const generateNextQuestion = (
     deck,
     practiceSettings,
   );
-
-  savePracticeState(practiceState);
 };
 
 export const isCorrectAnswer = (givenAnswer: Answer, correctAnswer: Answer) => {
   if (
-    correctAnswer.kind == AnswerType.Position &&
-    givenAnswer.kind == AnswerType.Position
+    correctAnswer.kind === AnswerType.Position &&
+    givenAnswer.kind === AnswerType.Position
   ) {
     return givenAnswer.value === correctAnswer.value;
   } else if (
-    correctAnswer.kind == AnswerType.Card &&
-    givenAnswer.kind == AnswerType.Card
+    correctAnswer.kind === AnswerType.Card &&
+    givenAnswer.kind === AnswerType.Card
   ) {
     return (
       givenAnswer.value.value === correctAnswer.value.value &&

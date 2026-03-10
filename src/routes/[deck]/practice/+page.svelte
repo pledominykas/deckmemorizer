@@ -11,6 +11,7 @@
     updatePracticeProgress,
     generateNextQuestion,
     loadOrCreatePracticeState,
+    savePracticeState,
   } from "$lib/utils/practice";
   import clsx from "clsx";
   import PracticeProgressCard from "$lib/components/ui/practice-progress-card/practice-progress-card.svelte";
@@ -56,6 +57,7 @@
     isAnswerSubmitted = true;
 
     updatePracticeProgress(practiceState, answer);
+    savePracticeState($state.snapshot(practiceState));
   };
 
   const onContinueClick = () => {
@@ -76,6 +78,7 @@
     }
 
     generateNextQuestion(practiceState, data.deck, data.practiceSettings);
+    savePracticeState($state.snapshot(practiceState));
   };
 </script>
 

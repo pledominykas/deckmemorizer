@@ -9,7 +9,7 @@ export const load: PageLoad = async ({ url, params, parent }) => {
   const { deck } = await parent();
 
   if (!practiceSettings) {
-    throw redirect(302, `/${deck.id}/configure-practice-session`);
+    return redirect(302, `/${deck.id}/configure-practice-session`);
   }
 
   return {

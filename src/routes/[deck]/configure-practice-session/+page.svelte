@@ -86,6 +86,7 @@
     </div>
     <div>
       <Button
+        disabled={practiceSettings.selectedQuestionTypes.length === 0}
         onclick={() => {
           const params = new URLSearchParams({
             types: practiceSettings.selectedQuestionTypes.join(","),
