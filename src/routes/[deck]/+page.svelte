@@ -7,6 +7,18 @@
   let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+  <title>{data.deck.title} Trainer - Practice the {data.deck.title} Stack | Deck Memorizer</title>
+  <meta
+    name="description"
+    content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations for the {data.deck.title} memdeck."
+  />
+  <meta property="og:title" content="{data.deck.title} Trainer - Practice the {data.deck.title} Stack" />
+  <meta property="og:description" content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations." />
+  <meta name="twitter:title" content="{data.deck.title} Trainer - Practice the {data.deck.title} Stack" />
+  <meta name="twitter:description" content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations." />
+</svelte:head>
+
 <div class="flex flex-col gap-24">
   <div>
     <h1 class="text-5xl font-bold mb-4 text-center">{data.deck.title}</h1>

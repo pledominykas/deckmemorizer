@@ -46,6 +46,18 @@
   let customDeckList = $derived(Object.values(getCustomDecks()));
 </script>
 
+<svelte:head>
+  <title>Memdeck Trainer - Practice Mnemonica, Aronson & Redford Stacks | Deck Memorizer</title>
+  <meta
+    name="description"
+    content="Free memdeck trainer for magicians. Master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum with interactive quizzes, positional recall, and card browsing."
+  />
+  <meta property="og:title" content="Memdeck Trainer - Practice Mnemonica, Aronson & Redford Stacks" />
+  <meta property="og:description" content="Free memdeck trainer for magicians. Master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum with interactive quizzes, positional recall, and card browsing." />
+  <meta name="twitter:title" content="Memdeck Trainer - Practice Mnemonica, Aronson & Redford Stacks" />
+  <meta name="twitter:description" content="Free memdeck trainer for magicians. Master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum with interactive quizzes, positional recall, and card browsing." />
+</svelte:head>
+
 <div class="flex flex-col items-center justify-center mb-16">
   <div class="flex flex-wrap justify-center gap-4 text-center">
     <WandSparkles class="w-16 h-16 text-accent-foreground mb-4" />

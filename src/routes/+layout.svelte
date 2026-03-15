@@ -11,12 +11,19 @@
 </script>
 
 <svelte:head>
-  <title>Deck Memorizer</title>
+  <title>Deck Memorizer - Memdeck Trainer for Card Magic</title>
   <meta
     name="description"
-    content="A trainer for memdeck memorization to help magicians learn and recall card stacks."
+    content="Free online memdeck trainer for magicians. Practice and master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum card stacks."
   />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="canonical" href={page.url.origin + page.url.pathname} />
+  <meta property="og:site_name" content="Deck Memorizer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={page.url.origin + page.url.pathname} />
+  <meta property="og:image" content={page.url.origin + '/og-image.png'} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={page.url.origin + '/og-image.png'} />
 </svelte:head>
 
 <ModeWatcher />

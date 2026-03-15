@@ -82,6 +82,12 @@
   };
 </script>
 
+<svelte:head>
+  <title>Practice {data.deck.title} | Deck Memorizer</title>
+  <meta property="og:title" content="Practice {data.deck.title}" />
+  <meta name="twitter:title" content="Practice {data.deck.title}" />
+</svelte:head>
+
 <div class="flex flex-col flex-1 min-h-0 gap-4 md:gap-6">
   <div class="flex justify-between items-stretch gap-2 md:gap-6">
     <PracticeProgressCard

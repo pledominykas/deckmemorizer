@@ -22,6 +22,18 @@
   });
 </script>
 
+<svelte:head>
+  <title>Configure Practice - {data.deck.title} | Deck Memorizer</title>
+  <meta
+    name="description"
+    content="Set up a practice session for the {data.deck.title}. Choose question types including positional recall, adjacent cards, and cut calculations."
+  />
+  <meta property="og:title" content="Configure Practice - {data.deck.title}" />
+  <meta property="og:description" content="Set up a practice session for the {data.deck.title}. Choose question types including positional recall, adjacent cards, and cut calculations." />
+  <meta name="twitter:title" content="Configure Practice - {data.deck.title}" />
+  <meta name="twitter:description" content="Set up a practice session for the {data.deck.title}. Choose question types including positional recall, adjacent cards, and cut calculations." />
+</svelte:head>
+
 <Card.Root>
   <Card.Header>
     <Card.Title>Configure Practice Session</Card.Title>

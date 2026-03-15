@@ -13,6 +13,12 @@
   let practiceState = $derived(data.practiceState);
 </script>
 
+<svelte:head>
+  <title>Practice Results - {data.deck.title} | Deck Memorizer</title>
+  <meta property="og:title" content="Practice Results - {data.deck.title}" />
+  <meta name="twitter:title" content="Practice Results - {data.deck.title}" />
+</svelte:head>
+
 <Card.Root>
   <div class="flex justify-center">
     <Sparkles class="w-32 h-32 text-accent-foreground" />
