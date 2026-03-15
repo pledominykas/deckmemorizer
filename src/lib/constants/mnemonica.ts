@@ -4,9 +4,12 @@ export const MNEMONICA: Deck = {
   id: "mnemonica",
   title: "Mnemonica",
   author: "Juan Tamariz",
+  longTitle: "Mnemonica Trainer - Learn & Practice the Mnemonica Stack",
   shortDescription:
     "The Mnemonica stack, as described by Juan Tamariz in his book 'Mnemonica: The Art of Memory for Magicians'.",
   longDescription:
+    "Free Mnemonica trainer by Juan Tamariz. Practice positional recall, adjacent card identification, and cut calculations for the Mnemonica memdeck.",
+  pageDescription:
     "The Mnemonica stack, as described by Juan Tamariz in his book 'Mnemonica: The Art of Memory for Magicians'. It is a specific arrangement of a standard deck of 52 playing cards that is designed to allow magicians to perform a wide variety of card tricks and routines with ease. The stack is arranged in a way that allows for easy memorization and quick access to any card in the deck, making it a powerful tool for card magic.",
   cards: [
     { suit: CardSuit.Clubs, value: CardValue.Four, position: 1 },

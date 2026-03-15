@@ -33,9 +33,11 @@
     addCustomDeck({
       id,
       title: name.trim(),
+      longTitle: `${name.trim()} Trainer`,
       author: "Custom",
       shortDescription: "A custom deck.",
       longDescription: "A custom deck.",
+      pageDescription: "A custom deck.",
       cards,
     });
     name = "";
@@ -56,6 +58,21 @@
   <meta property="og:description" content="Free memdeck trainer for magicians. Master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum with interactive quizzes, positional recall, and card browsing." />
   <meta name="twitter:title" content="Memdeck Trainer - Practice Mnemonica, Aronson & Redford Stacks" />
   <meta name="twitter:description" content="Free memdeck trainer for magicians. Master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum with interactive quizzes, positional recall, and card browsing." />
+  {@html `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Deck Memorizer",
+    "alternateName": "Memdeck Trainer",
+    "description": "Free online memdeck trainer for magicians. Practice and master Mnemonica, Aronson Stack, Redford Stack, Si Stebbins, and Memorandum card stacks.",
+    "url": "https://deckmemorizer.com",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  })}</script>`}
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center mb-16">
@@ -64,7 +81,7 @@
     <h1 class="text-5xl font-bold mb-4">Deck Memorizer</h1>
   </div>
   <h2 class="text-xl text-primary text-center">
-    Master memdeck systems for card magic. Practice positional recall, cuts, and
+    Free memdeck trainer for card magic. Practice positional recall, cuts, and
     more.
   </h2>
 </div>

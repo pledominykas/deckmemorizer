@@ -1,9 +1,11 @@
 export interface Deck {
   id: string;
   title: string;
+  longTitle: string;
   author: string;
   shortDescription: string;
   longDescription: string;
+  pageDescription: string;
   cards: Card[];
 }
 

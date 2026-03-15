@@ -13,20 +13,20 @@
 </script>
 
 <svelte:head>
-  <title>Browse {data.deck.title} - Complete Card Order | Deck Memorizer</title>
+  <title>Browse {data.deck.title} - Complete Memdeck Card Order | Deck Memorizer</title>
   <meta
     name="description"
     content="Browse all 52 cards in the {data.deck.title} by {data.deck.author}. View the complete memdeck order in grid, list, or single card view."
   />
-  <meta property="og:title" content="Browse {data.deck.title} - Complete Card Order" />
+  <meta property="og:title" content="Browse {data.deck.title} - Complete Memdeck Card Order" />
   <meta property="og:description" content="Browse all 52 cards in the {data.deck.title} by {data.deck.author}. View the complete memdeck order in grid, list, or single card view." />
-  <meta name="twitter:title" content="Browse {data.deck.title} - Complete Card Order" />
+  <meta name="twitter:title" content="Browse {data.deck.title} - Complete Memdeck Card Order" />
   <meta name="twitter:description" content="Browse all 52 cards in the {data.deck.title} by {data.deck.author}. View the complete memdeck order in grid, list, or single card view." />
 </svelte:head>
 
 <Card.Root class="flex flex-col flex-1 min-h-0">
   <Card.Header>
-    <Card.Title>Browse Deck</Card.Title>
+    <Card.Title>Browse {data.deck.title}</Card.Title>
     <Card.Description>{data.deck.title} by {data.deck.author}</Card.Description>
   </Card.Header>
   <Card.Content class="flex flex-col flex-1 min-h-0">

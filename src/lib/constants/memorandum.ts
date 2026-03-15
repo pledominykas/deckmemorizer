@@ -4,9 +4,12 @@ export const MEMORANDUM: Deck = {
   id: "memorandum",
   title: "Memorandum",
   author: "Woody Aragon",
+  longTitle: "Memorandum Trainer - Practice the Memorandum Stack",
   shortDescription:
     "The Memorandum stack, created by Woody Aragon, is a memorized deck arrangement published in his book 'Memorandum'.",
   longDescription:
+    "Free Memorandum stack trainer by Woody Aragon. Practice positional recall, adjacent card identification, and cut calculations for the Memorandum memdeck.",
+  pageDescription:
     "The Memorandum stack was created by Spanish magician Woody Aragon and published in his book 'Memorandum'. It is a carefully designed memorized deck stack that allows magicians to perform a wide variety of powerful card effects. Like other memorized deck systems, the stack appears random while containing hidden mathematical and structural properties that enable a broad range of routines.",
   cards: [
     { suit: CardSuit.Spades, value: CardValue.Jack, position: 1 },

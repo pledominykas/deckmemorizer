@@ -6,9 +6,12 @@ export const SI_STEBBINS: Deck = {
   id: "si-stebbins",
   title: "Si Stebbins",
   author: "Si Stebbins",
+  longTitle: "Si Stebbins Trainer - Practice the Si Stebbins Stack",
   shortDescription:
     "A mathematical stack where suits cycle CHaSeD and each card's value is 3 higher than the previous, allowing instant calculation of any card's position.",
   longDescription:
+    "Free Si Stebbins stack trainer. Practice the mathematical CHaSeD system for instant card position calculation. Interactive memdeck trainer for magicians.",
+  pageDescription:
     "The Si Stebbins stack is one of the oldest and most elegant mathematical card stacks in magic. The system is simple: suits cycle in the order Clubs → Hearts → Spades → Diamonds (CHaSeD), and each successive card's value is exactly 3 higher than the previous (wrapping from King back to Ace). Starting with the Ace of Clubs, any card's position—or the card at any position—can be calculated instantly in your head without memorization. While the pattern is learnable by an astute observer, it remains a powerful tool for impromptu card magic and a gateway stack for magicians learning stacked decks.",
   cards: [
     { suit: CardSuit.Clubs, value: CardValue.Ace, position: 1 },

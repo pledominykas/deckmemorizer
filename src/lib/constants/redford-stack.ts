@@ -4,9 +4,12 @@ export const REDFORD_STACK: Deck = {
   id: "redford-stack",
   title: "Redford Stack",
   author: "Patrick G. Redford",
+  longTitle: "Redford Stack Trainer - Practice the Redford Memdeck",
   shortDescription:
     "The Redford Stack is a versatile memorized deck arrangement created by Patrick G. Redford, designed for powerful and flexible card magic effects.",
   longDescription:
+    "Free Redford Stack trainer by Patrick G. Redford. Practice positional recall, adjacent card identification, and cut calculations for the Redford memdeck.",
+  pageDescription:
     "The Redford Stack is a specially designed memorized deck system developed by Patrick G. Redford, known for its adaptability and wide range of applications in card magic. Unlike some traditional stacks, the Redford Stack can be set up quickly from a shuffled deck or a new pack of cards and even transitions into other stacked arrangements (like Si-Stebbins or mirror stacks) with ease. Packed with built-in features for spelling effects, poker and blackjack deals, coincidences, and faro routines, this stack appears random but offers a powerful toolset for performing deceptive and impressive card effects. Many routines with the stack can be performed without fully memorizing the order, making it accessible while still highly sophisticated.",
   cards: [
     { suit: CardSuit.Hearts, value: CardValue.Queen, position: 1 },

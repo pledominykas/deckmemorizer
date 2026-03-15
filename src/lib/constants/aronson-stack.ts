@@ -4,9 +4,12 @@ export const ARONSON_STACK: Deck = {
   id: "aronson-stack",
   title: "Aronson Stack",
   author: "Simon Aronson",
+  longTitle: "Aronson Stack Trainer - Master the Aronson Memdeck",
   shortDescription:
     "The Aronson Stack is a memorized deck arrangement created by Simon Aronson, designed for a wide range of powerful card magic effects.",
   longDescription:
+    "Free Aronson Stack trainer by Simon Aronson. Practice positional recall, adjacent card identification, and cut calculations for the Aronson memdeck.",
+  pageDescription:
     "The Aronson Stack was created by Simon Aronson and first published in his book 'A Stack to Remember' (1979). It is one of the most popular and versatile memorized deck stacks in card magic. The stack appears completely random while offering an extraordinary number of built-in properties: multiple poker and bridge deals, spelling effects, coincidences, and much more. Aronson has published numerous routines exploiting the stack's hidden mathematical relationships, making it a favourite among serious card magicians worldwide.",
   cards: [
     { suit: CardSuit.Spades, value: CardValue.Jack, position: 1 },

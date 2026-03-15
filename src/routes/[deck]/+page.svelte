@@ -8,24 +8,21 @@
 </script>
 
 <svelte:head>
-  <title>{data.deck.title} Trainer - Practice the {data.deck.title} Stack | Deck Memorizer</title>
-  <meta
-    name="description"
-    content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations for the {data.deck.title} memdeck."
-  />
-  <meta property="og:title" content="{data.deck.title} Trainer - Practice the {data.deck.title} Stack" />
-  <meta property="og:description" content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations." />
-  <meta name="twitter:title" content="{data.deck.title} Trainer - Practice the {data.deck.title} Stack" />
-  <meta name="twitter:description" content="{data.deck.title} trainer by {data.deck.author}. Practice positional recall, adjacent card identification, and cut calculations." />
+  <title>{data.deck.longTitle} | Deck Memorizer</title>
+  <meta name="description" content={data.deck.longDescription} />
+  <meta property="og:title" content={data.deck.longTitle} />
+  <meta property="og:description" content={data.deck.longDescription} />
+  <meta name="twitter:title" content={data.deck.longTitle} />
+  <meta name="twitter:description" content={data.deck.longDescription} />
 </svelte:head>
 
 <div class="flex flex-col gap-24">
   <div>
-    <h1 class="text-5xl font-bold mb-4 text-center">{data.deck.title}</h1>
+    <h1 class="text-5xl font-bold mb-4 text-center">{data.deck.title} Trainer</h1>
     <p class="text-xl text-accent-foreground mb-6 text-center">
       by {data.deck.author}
     </p>
-    <p class="text-xl text-primary text-center">{data.deck.longDescription}</p>
+    <p class="text-xl text-primary text-center">{data.deck.pageDescription}</p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <DeckModeCard
